@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let selectedSquare = null;
 
     // Initialize Stockfish
-    const stockfish = new Worker('https://cdnjs.cloudflare.com/ajax/libs/stockfish/10.0.2/stockfish.js');
+    const stockfish = new Worker('https://cdnjs.cloudflare.com/ajax/libs/stockfish.js/10.0.2/stockfish.wasm.js');
     stockfish.onmessage = (event) => {
         const message = event.data;
         if (message.startsWith('bestmove')) {
