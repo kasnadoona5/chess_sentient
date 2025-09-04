@@ -11,9 +11,21 @@
         <div id="board"></div>
         <div id="info">
             <p>Turn: <span id="turn">White</span></p>
+            <div id="status"></div>
+            <div id="difficulty-selection">
+                <label for="difficulty">Difficulty:</label>
+                <select id="difficulty">
+                    <option value="5">Easy</option>
+                    <option value="10" selected>Medium</option>
+                    <option value="15">Hard</option>
+                </select>
+            </div>
+            <button id="new-game">New Game</button>
             <p id="winner"></p>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stockfish/10.0.2/stockfish.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
